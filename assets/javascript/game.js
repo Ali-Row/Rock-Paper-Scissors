@@ -10,7 +10,7 @@ let cpuOptions = ["r", "p", "s"],
 
 document.onkeyup = function(event) {
 
-  let cpuGuess = cpuOptions[Math.floor(Math.random() * cpuOptions.length)],
+  let cpuGuess = cpuOptions[Math.floor(Math.random() * 3)],
       userGuess = event.key;
 
     if ((userGuess === "r" && cpuGuess === "s") ||
@@ -20,6 +20,7 @@ document.onkeyup = function(event) {
 
     } else if (userGuess === cpuGuess) {
       ties++;
+      
     } else {
       losses++;
     }

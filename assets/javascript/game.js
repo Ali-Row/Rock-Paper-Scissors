@@ -15,8 +15,6 @@ document.onkeyup = function(event) {
   let cpuGuess = cpuOptions[Math.floor(Math.random() * cpuOptions.length)],
       userGuess = event.key;
 
-  if ((userGuess === "r" || "p" || "s")) {
-
     if ((userGuess === "r" && cpuGuess === "s") ||
       (userGuess === "s" && cpuGuess === "p") || 
       (userGuess === "p" && cpuGuess === "r")) {
@@ -34,7 +32,6 @@ document.onkeyup = function(event) {
     winsText.innerHTML = `<p>Wins: ${wins}</p>`;
     lossesText.innerHTML = `<p>Losses: ${losses}</p>`;
     tiesText.innerHTML = `<p>Ties: ${ties}</p>`;
-  }
 };
 
 

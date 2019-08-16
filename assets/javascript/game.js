@@ -1,14 +1,12 @@
 let cpuOptions = ["r", "p", "s"],
-
     wins = 0,
     losses = 0,
     ties = 0,
-
-    userChoiceText = document.getElementById("user-choice"),
-    cpuChoiceText = document.getElementById("cpu-choice"),
     winsText = document.getElementById("wins"),
     lossesText = document.getElementById("losses"),
-    tiesText = document.getElementById("ties");
+    tiesText = document.getElementById("ties"),
+    userChoiceText = document.getElementById("user-choice"),
+    cpuChoiceText = document.getElementById("cpu-choice");
 
 document.onkeyup = function(event) {
 
@@ -22,7 +20,6 @@ document.onkeyup = function(event) {
 
     } else if (userGuess === cpuGuess) {
       ties++;
-
     } else {
       losses++;
     }

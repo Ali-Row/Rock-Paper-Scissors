@@ -29,8 +29,8 @@ document.onkeyup = function(event) {
       losses++;
     }
 
-    userChoiceText.innerHTML = `<p>You chose: ${userGuess}</p>`;
-    cpuChoiceText.innerHTML = `<p>The computer chose: ${cpuGuess}</p>`;
+    userChoiceText.innerHTML = `<p>You chose: ${userGuess.toUpperCase()}</p>`;
+    cpuChoiceText.innerHTML = `<p>The computer chose: ${cpuGuess.toUpperCase()}</p>`;
     winsText.innerHTML = `<p>Wins: ${wins}</p>`;
     lossesText.innerHTML = `<p>Losses: ${losses}</p>`;
     tiesText.innerHTML = `<p>Ties: ${ties}</p>`;

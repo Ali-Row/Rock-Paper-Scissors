@@ -1,9 +1,17 @@
+body {
+  background: #000;
+}
 h2,
 h5 {
-  color: #26272c;
+  color: #c2c2c2;
+  font-family: "Nunito", sans-serif;
 }
 .jumbotron {
   background: #26272c;
-  color: #a8a8a8;
+  color: #c2c2c2;
+  font-family: "Nunito", sans-serif;
   font-size: 22px;
+  box-shadow: 0 0 0 2px #000, 0.3em 0.3em 1em rgba(0, 0, 0, 0.479);
+  max-width: 500px;
+  margin-top: 30px;
 }

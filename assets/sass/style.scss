@@ -1,8 +1,18 @@
+$globalFont: 'Nunito', sans-serif;
+
+body {
+    background: rgb(0, 0, 0);
+}
 h2, h5 {
-    color: rgb(38, 39, 44);
+    color: rgb(194, 194, 194);
+    font-family: $globalFont;
 }
 .jumbotron {
     background: rgb(38, 39, 44);
-    color: rgb(168, 168, 168);
+    color: rgb(194, 194, 194);
+    font-family: $globalFont;
     font-size: 22px;
+    box-shadow: 0 0  0 2px rgb(0, 0, 0), 0.3em 0.3em 1em rgba(0, 0, 0, 0.479);
+    max-width: 500px;
+    margin-top: 30px;
 }

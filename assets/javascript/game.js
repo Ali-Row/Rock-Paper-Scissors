@@ -12,18 +12,22 @@ document.onkeyup = function(event) {
 
   let cpuGuess = cpuOptions[Math.floor(Math.random() * 3)],
       userGuess = event.key;
+          
+  if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
+    // Nested if statement
     if ((userGuess === "r" && cpuGuess === "s") ||
-      (userGuess === "s" && cpuGuess === "p") || 
-      (userGuess === "p" && cpuGuess === "r")) {
-      wins++;
-
+        (userGuess === "s" && cpuGuess === "p") || 
+        (userGuess === "p" && cpuGuess === "r")) {
+        wins++;
     } else if (userGuess === cpuGuess) {
-      ties++;
-      
+        ties++;     
     } else {
-      losses++;
+        losses++;
     }
+  } else {
+    alert("You hit the wrong key!")
+  }
 
     userChoiceText.innerHTML = `<p>You chose: ${userGuess.toUpperCase()}</p>`;
     cpuChoiceText.innerHTML = `<p>The computer chose: ${cpuGuess.toUpperCase()}</p>`;
